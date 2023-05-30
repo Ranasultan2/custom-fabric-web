@@ -1,0 +1,30 @@
+<div  class="container">
+
+  <form #sellerSignup="ngForm" (ngSubmit)="signUp(sellerSignup.value)" class="form" >
+    <h1>Sign Up</h1>
+    <p>{{loginerror}}</p>
+  <div class="container">
+
+    <input type="text" placeholder="Enter Username" name="username" required  ngModel  />
+
+
+    <input required type="email" placeholder="Enter Email" name="email"  ngModel/>
+
+
+    <input
+    type="password"
+      placeholder="Enter Password"
+      name="password"
+      required
+      ngModel
+      />
+
+      <button type="submit">Sign Up</button>
+      <div class="d-h-a">
+        <a routerLink="/login" >Already have account? Login</a>
+
+      </div>
+    </div>
+  </form>
+
+</div>

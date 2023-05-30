@@ -1,0 +1,56 @@
+<p>shorts works!</p>
+<div class="section">
+  <ul>
+    <li><a (click)="design()"> One: Design</a></li>
+    <li><a (click)="image()"> Two: Image/Logo</a></li>
+    <li><a (click)="text()"> Three: Text</a></li>
+    <li><a (click)="review()"> Four: Review</a></li>
+    <li><a (click)="submit()"> Submit</a></li>
+  </ul>
+</div>
+
+<!-- #################### For Design Part ############################ -->
+
+<div class="container" *ngIf="logic == 'design'">
+  <div class="background"></div>
+  <div class="--background"></div>
+  <div class="side-panel"></div>
+  <div class="cuff"></div>
+  <div class="piping"></div>
+  <div class="inner-thigh"></div>
+  <div class="display"></div>
+</div>
+
+<!-- #################### For Image Part ############################ -->
+
+<div class="container" *ngIf="logic == 'image'">
+  <div class="background"></div>
+  <div class="--background"></div>
+  <div class="side-panel"></div>
+  <div class="cuff"></div>
+  <div class="display"></div>
+</div>
+<!-- #################### For Text Part ############################ -->
+
+<div class="container" *ngIf="logic == 'text'">
+  <div class="background"></div>
+  <div class="--background"></div>
+  <div class="side-panel"></div>
+  <div class="cuff"></div>
+  <div class="display"></div>
+</div>
+<!-- #################### For Review Part ############################ -->
+
+<div class="container" *ngIf="logic == 'review'">
+  <div class="background"></div>
+  <div class="--background"></div>
+  <div class="display"></div>
+</div>
+<!-- #################### For Submit Part ############################ -->
+
+<div class="container" *ngIf="logic == 'submit'">
+  <div class="background"></div>
+
+  <div class="display"></div>
+</div>
+

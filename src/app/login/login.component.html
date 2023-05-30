@@ -1,0 +1,31 @@
+<!-- // For Seller logIN form -->
+
+<div class="container" >
+
+  <form #sellerLogin="ngForm" (ngSubmit)="logIn(sellerLogin.value)" class="form" >
+    <h1>Login</h1>
+    <p>{{error}}</p>
+    <!-- <p class="p-error">{{showError}}</p> -->
+  <div class="container">
+
+
+    <input type="email" placeholder="Enter Email" name="email" required ngModel/>
+
+
+    <input
+    type="password"
+      placeholder="Enter Password"
+      name="password"
+      required
+      ngModel
+      />
+
+      <button type="submit">Login</button>
+      <div class="d-h-a">
+        <a routerLink="/signup" >Dont have account? Signup</a>
+
+      </div>
+    </div>
+  </form>
+
+</div>
