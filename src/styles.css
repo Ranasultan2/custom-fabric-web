@@ -10,6 +10,8 @@
   --second-bg-color:#2a2e31e9;
   --text-color:#ededed;
   --main-color:#00abf0;
+  /* thumbnail_color */
+  --color: invert(43%) sepia(88%) saturate(7473%) hue-rotate(272deg) brightness(110%) contrast(116%);
 
 }
 

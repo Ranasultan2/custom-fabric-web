@@ -1,4 +1,6 @@
 
+
+
 /* ######################## main container ######################  */
 .container{
 
@@ -16,13 +18,14 @@
 
 .row{
   padding: 10px 5px ;
-  margin:2px 2px;
+  margin:0px 2px;
 
 
 }
 /* ################################## coulmn 2 ################################ */
 
 .col2{
+  position: relative;
   background-color: #ffffff;
 
   /* background-size: cover; */
@@ -33,25 +36,37 @@
   overflow: hidden;
 
 
-}
-.col2 img{
-/* margin-top: -720px; */
-
 
 
 }
-.col2 a{
+
+/* .col2{
   position: absolute;
-  padding:2px 2px ;
-  color :rgb(254, 105, 105);
-  background-color: lightcyan;
-  border :2px solid blue;
-  margin:2px 10px
+} */
 
+
+.col2 button{
+
+  position: absolute;
+  left: 74%;
+  bottom: 620px;
+
+
+
+  /* color :rgb(254, 105, 105);  */
+
+  transition: 0.3s;
+  /* border :2px solid blue; */
+
+
+}
+.col2 a:hover
+{
+  color:var(--main-color)
 }
 
 .col3{
-  display: none;
+
 }
 
 
@@ -72,33 +87,40 @@
 
 .section{
 
-  margin-top: 100px;
-  width: 79%;
-  height: 40px;
-  margin-left:180px;
+
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 80%;
+  width: 200px;
+  margin-top: 1rem;
+
 
 }
 .section ul{
   display: flex;
-  padding: 2px 10px ;
+
+  flex-direction: column;
+  padding-left: 0;
+  list-style: none;
+
+
+
 
 }
 
-.section ul li{
-  text-decoration: none;
-  margin-left :70px;
-  list-style:none;
 
-}
 .section ul li a {
-  text-decoration: none;
-  color:white;
-  transition: .3s;
-  cursor: pointer;
+background-color: rgba(103, 103, 103, 0.199);
+color :white;
+cursor: pointer;
+font-weight: 500;
 
 }
 .section ul li a:hover {
-  color:var(--main-color);
+
+  background-color: black;
+  color:white;
 
 
 
@@ -140,6 +162,20 @@
   height: 1440px;
 
 }
+.flexb{
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  height: 1440px;
+  padding:2px 10px;
+
+
+}
+.flexb a{
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
 .flex a {
   width:200px;
   height:100px;
@@ -150,4 +186,6 @@
   text-decoration: none;
   padding-left: 15px;
 }
+
+
 

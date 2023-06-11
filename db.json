@@ -7,10 +7,13 @@
       "id": 1
     },
     {
-      "username": "asdf",
+      "name": "asdf",
       "email": "muneeb@gmail.com",
       "password": "sadfas",
       "id": 2
     }
+  ],
+  "colors":[
+    {"color":"red","code":"#212212"}
   ]
 }
